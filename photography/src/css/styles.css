@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.container{
+    padding:100px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .col {
+    flex: 1 0 0%;
+  }
+
+  .navbar-fixed{
+    position: sticky;
+    background-color: black;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.2s ease-in;
+  }
+  
+
+  /* Banner section */
+#banner-section{
+    height: 1080px;
+    background-image: url('/src/img/hero_man1.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: black;
+    position: relative;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+a{
+    text-decoration: none;
+}
+
+.nav-links{
+    margin-left: auto;
+}
+
+
+
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links ul li a{
+    font-size: 16px ;
+    /* font-weight: 300; */
+    color: #fff;
+    padding: 39px 20px;
+    display: block;
+    line-height: 1.5;
+}
+
+.contact-btn{
+    margin-left: auto;
+}
+
+.contact-btn button, .watch-portfolio-btn button, .get-start-btn button{
+    padding: 15px 45px;
+    background-color: #f04e3c;
+    border: none;
+    font-size: 16px;
+    /* font-weight: 600; */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner-text{
+    width: 50%;
+    position: absolute;
+    left: 100px;
+    top: 30%;
+}
+
+.banner-text span{
+    font-size: 24px;
+    /* font-weight: 400; */
+    color: #f04e3c;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 44px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.banner-text span::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #f04e3c;
+    left: 0;
+    top: 52%;
+    transform: translateY(-50%);
+}
+
+.banner-text h1{
+    font-family:'Montserrat', sans-serif;
+    font-size: 70px;
+    /* font-weight: 700; */
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-top: 44px;
+    margin-bottom: 51px;
+}
+
+/* Experience section */
+
+#experiences, #testomonial-section{
+    background-color: #121212;
+    color: #fff;
+}
+
+#experiences h1{
+    font-family:'Montserrat', sans-serif;
+    font-size: 50px;
+    /* font-weight: 700; */
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 51px;
+} 
+
+#experiences a::after{
+    content: ' ';
+    width: 130px;
+    height: 1px;
+    background: #f04e3c;
+    display: block;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#experiences h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+#experiences span::after{
+    position: absolute;
+    content: ' ';
+    width: 70px;
+    height: 1px;
+    background: #fff;
+    margin-top: 7px;
+    left: 60%;
+
+
+}
+
+.year-number{
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.year-number > .number-5{
+    font-size: 70px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.year-number  .year-text{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+
+/* blog01 */
+#blog01{
+    background-color: black;
+    color: #fff;
+}
+
+#blog01 .blog-card-text h3{
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* gallery */
+
+#gallery .gallery-image{
+    height: 685px;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+/* Brand */
+
+#brand{
+    background-color: #000;
+    color: #fff;
+}
+
+#brand h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#brand p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#brand .brand-card{
+    border: 0.5px solid #fff;
+    width: 48%;
+    text-align: center;
+    padding-top:60px;
+    padding-bottom: 40px;
+}
+
+#brand .brand-card .brand-card-text{
+    margin-top: 20px;
+}
+
+#brand .brand-card .brand-card-text p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+#brand .get-start-btn{
+    margin-top: 40px;
+}
+
+/* testomonial section */
+#testomonial-section .col{
+
+    text-align: center;
+}
+
+#testomonial-section p{
+    /* width: 30%; */
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#testomonial-section .testomonial-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+#testomonial-section .testomonial-image .chief{
+        margin-left: 55px;
+}
+
+
+/* tourist blog */
+
+#tourist-blog{
+    background-color: #000;
+    color: #fff;
+}
+
+#tourist-blog h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#tourist-blog .tourist-blog-card{
+    position: relative;
+    text-align: left;
+} 
+
+.tourist-blog-card-text{
+    position: absolute;
+    background-color: #121212;
+    padding: 30px;
+    left: 17px;
+    bottom: -40px;
+} 
+
+
+/* footer */
+
+#footer{
+    background-color:#121212 ;
+    color: #fff;
+}
+
+#footer p{
+    margin-top: 20px;
+}
+
+#footer ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+#footer ul li{
+    line-height: 2;
+}
+
+#footer ul li a{
+    color: rgb(134, 140, 152);
+    font-weight: 300;
+}
+
+
+
